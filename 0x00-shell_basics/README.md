@@ -6,7 +6,6 @@
 
 ## Structure
 
-  You can see files in 0xindex-name format. Each file store a basic shell command required to perform certain operation.
     * 0-current_working-directory 
           prints the absolute path name of the current working directory.
     * 1-listit
