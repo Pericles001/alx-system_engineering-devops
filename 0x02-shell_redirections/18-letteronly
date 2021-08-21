@@ -1,0 +1,2 @@
+#!/bin/bash
+grep '^[[:upper:]]' /etc/ssh/sshd_config
