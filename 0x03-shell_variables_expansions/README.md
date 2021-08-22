@@ -18,6 +18,7 @@
  *  9-duplicate_last_line : dupliacates the last line of a file
  *  10-no_more_js : deletes all the .js files in the current directory and all it's subfolders
  *  11-directories : counts the number of directories and sub-directories in the current directory.
+<<<<<<< HEAD
  * 12-newest_files : displays the 10 newest files
  * 13-unique : prints only words that appear once from a list of words
  * 14-findthatword: displays lines containig the word root from the passwd file
@@ -29,4 +30,17 @@
  * 20-hiago : removes all letters c and C from input
  * 21-reverse : reverses its input
  * 22-users_and_homes : displays all users and their home directories sorted by users
+=======
+    * 12-newest_files : displays the 10 newest files
+    * 13-unique : prints only words that appear once from a list of words
+    * 14-findthatword: displays lines containig the word root from the passwd file
+    * 15-countthatword : displays the number of lines that contain the word bin in the passwd file
+    * 16-whatsnext : displays lines containing the pattern root and 3 lines after them in the file passwd
+    * 17-hidethisword : displays all the lines in the file passwd that don't contain the pattern bin 
+    * 18-letteronly : display all the lines of the file sshd_config starting with a capital letter 
+    * 19-AZ : replace all characters A and c from input to Z and e respectively
+    * 20-hiago : removes all letters c and C from input
+    * 21-reverse : reverses its input
+    * 22-users_and_homes : displays all users and their home directories sorted by users
+>>>>>>> 3f0dbf79d0f4b84d1ffd5d10342b0557a6416944
 
