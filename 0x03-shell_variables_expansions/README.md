@@ -1,9 +1,10 @@
 # 0x02-shell_redirections
 
 ## Description
-  Training on linnux shell commands helping in  variable expansions
-## Structure
+  Training on linux shell commands helping in  variable expansions
   This project is useful when it comes to review skills in shell usage to redirect between files 
+
+## Structure
     * 0-hello_world : prints "Hello, World", followed by a new line
     * 1-confused_smiley : displays a confused smiley to the terminal
     * 2-hellofile : displays the contents of /etc/passwd to the terminal
