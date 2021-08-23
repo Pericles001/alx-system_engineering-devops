@@ -13,4 +13,6 @@
    ### 0x02-shell_redirections
       Shell commands specialized in file i/o redirections training: cat, find, head, tail, grep, sed, pipelines ...
    ### 0x03. Shell, init files, variables and expansions
+   
+     authored  By Julien Barbier
       Training session specialized on expansion commands : alias, $USER, $PATH, printenv, set, export, local ... 
