@@ -3,7 +3,7 @@
 
 -   By Julien Barbier
 -   Weight: 1
--   Project over - took place from 08-19-2021 to 08-20-2021.
+
 
 
 About Bash projects
