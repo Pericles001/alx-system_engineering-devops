@@ -800,4 +800,4 @@ ubuntu@ip-172-31-63-244:/tmp/magic$
 
  Done! Help Re-check your code Get a sandbox QA Review
 
-Copyright © 2021 Holberton Inc, All rights reserved.
+
