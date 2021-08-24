@@ -9,11 +9,10 @@
    ### 0x00-shell_basics
       Basic shell commands training : ls, cd, pwd, chmod, rm, mkdir, rmdir ...
    ### 0x01. Shell, permissions
-      Authored by Julien Barbier
       Shell permission commands training: chmod, chown, chgrp ...
    ### 0x02. Shell, I/O Redirections and filters
-      Authored by Julien Barbier
       Shell commands specialized in file i/o redirections training: cat, find, head, tail, grep, sed, pipelines ...
    ### 0x03. Shell, init files, variables and expansions
-      Authored by Julien Barbier
       Training session specialized on expansion commands : alias, $USER, $PATH, printenv, set, export, local ... 
+      
+   #### Projects are authored by Julien Barbier
