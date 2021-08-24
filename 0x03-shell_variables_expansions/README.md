@@ -2,8 +2,8 @@
 =================================================
 
 -   By Julien Barbier
--   Ongoing project - started 08-24-2021, must end by 08-25-2021 (in about 21 hours) - you're done with 0% of tasks.
--   Checker will be released at 08-24-2021 12:00 PM
+-   Ongoing project - started 08-24-2021, must end by 08-25-2021 (in about 21 hours).
+-   Checker released at 08-24-2021 12:00 PM
 -   QA review fully automated.
 
 About Bash projects
