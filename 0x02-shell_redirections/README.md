@@ -3,8 +3,7 @@
 
 -   By Julien Barbier
 -   Weight: 1
--   Ongoing second chance project - started 08-23-2021, must end by 08-26-2021 (in 2 days) - you're done with 200% of tasks.
--   QA review fully automated.
+
 
 About Bash projects
 -------------------
