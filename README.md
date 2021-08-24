@@ -17,9 +17,9 @@
       
    #### Projects are authored by Julien Barbier
 
+<img align="left" width="100" height="100" src="https://user-images.githubusercontent.com/55035365/130540486-9d00b582-3ad6-4141-98cc-35eac9701780.png">
+<img align="right" width="100" height="https://user-images.githubusercontent.com/55035365/130540163-4847c991-44b1-49ff-b666-57c69d1d8e20.png">
 
- ![image](https://user-images.githubusercontent.com/55035365/130540486-9d00b582-3ad6-4141-98cc-35eac9701780.png)
-
-  
+ ![image](https://user-images.githubusercontent.com/55035365/130540486-9d00b582-3ad6-4141-98cc-35eac9701780.png)  
  ![image](https://user-images.githubusercontent.com/55035365/130540163-4847c991-44b1-49ff-b666-57c69d1d8e20.png)
 
