@@ -8,7 +8,8 @@
    
    ### 0x00-shell_basics
       Basic shell commands training : ls, cd, pwd, chmod, rm, mkdir, rmdir ...
-   ### 0x01-shell_permissions
+   ### 0x01. Shell, permissions
+      Authored by Julien Barbier
       Shell permission commands training: chmod, chown, chgrp ...
    ### 0x02. Shell, I/O Redirections and filters
       Authored by Julien Barbier
