@@ -16,3 +16,9 @@
       Training session specialized on expansion commands : alias, $USER, $PATH, printenv, set, export, local ... 
       
    #### Projects are authored by Julien Barbier
+
+<p align="center">
+  <img src="http://www.holbertonschool.com/holberton-logo.png"
+       alt="Holberton School logo"
+  >
+</p>
