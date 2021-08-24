@@ -16,8 +16,4 @@
       Training session specialized on expansion commands : alias, $USER, $PATH, printenv, set, export, local ... 
       
    #### Projects are authored by Julien Barbier
-<div align="center">
-<img align="left" width="300" height="300" src="https://user-images.githubusercontent.com/55035365/130540486-9d00b582-3ad6-4141-98cc-35eac9701780.png">
-<img align="right" width="300" height="300" src="https://user-images.githubusercontent.com/55035365/130540163-4847c991-44b1-49ff-b666-57c69d1d8e20.png">
-</div>
 
