@@ -117,40 +117,61 @@ Note: You do not have to learn about `fmt`, `pr`, `du`, `gzip`, `tar`, `lpr`, `s
  * 103-the_biggest_fan : a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 
 Tasks
-0. Hello World
-mandatory
-Write a script that prints “Hello, World”, followed by a new line to the standard output.
+-----
 
-julien@ubuntu:/tmp/h$ ./0-hello_world 
+### 0\. Hello World
+
+mandatory
+
+Write a script that prints "Hello, World", followed by a new line to the standard output.
+
+```
+julien@ubuntu:/tmp/h$ ./0-hello_world
 Hello, World
 julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
 Hello, World$
-julien@ubuntu:/tmp/h$ 
-Repo:
+julien@ubuntu:/tmp/h$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 0-hello_world
-  
-1. Confused smiley
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `0-hello_world`
+
+ Done! Help Check your code
+
+### 1\. Confused smiley
+
 mandatory
-Write a script that displays a confused smiley "(Ôo)'.
 
-julien@ubuntu:/tmp/h$ ./1-confused_smiley 
+Write a script that displays a confused smiley `"(Ôo)'`.
+
+```
+julien@ubuntu:/tmp/h$ ./1-confused_smiley
 "(Ôo)'
-julien@ubuntu:/tmp/h$ 
-Repo:
+julien@ubuntu:/tmp/h$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 1-confused_smiley
-  
-2. Let's display a file
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `1-confused_smiley`
+
+ Done! Help Check your code
+
+### 2\. Let's display a file
+
 mandatory
-Display the content of the /etc/passwd file.
+
+Display the content of the `/etc/passwd` file.
 
 Example:
 
+```
 $ ./2-hellofile
 ##
 # User Database
@@ -176,18 +197,26 @@ _ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
 _mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
 _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 2-hellofile
-  
-3. What about 2?
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `2-hellofile`
+
+ Done! Help Check your code
+
+### 3\. What about 2?
+
 mandatory
-Display the content of /etc/passwd and /etc/hosts
+
+Display the content of `/etc/passwd` and `/etc/hosts`
 
 Example:
 
+```
 $ ./3-twofiles
 ##
 # User Database
@@ -212,18 +241,26 @@ daemon:*:1:1:System Services:/var/root:/usr/bin/false
 255.255.255.255 broadcasthost
 ::1 localhost
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 3-twofiles
-  
-4. Last lines of a file
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `3-twofiles`
+
+ Done! Help Check your code
+
+### 4\. Last lines of a file
+
 mandatory
-Display the last 10 lines of /etc/passwd
+
+Display the last 10 lines of `/etc/passwd`
 
 Example:
 
+```
 $ ./4-lastlines
 _assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
 _coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
@@ -236,20 +273,27 @@ _displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false
 _astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false
 _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 
-Tips: “Thinks of it as a cat, what is at the end of it?”
+```
 
-Repo:
+Tips: "Thinks of it as a cat, what is at the end of it?"
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 4-lastlines
-  
-5. I'd prefer the first ones actually
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `4-lastlines`
+
+ Done! Help Check your code
+
+### 5\. I'd prefer the first ones actually
+
 mandatory
-Display the first 10 lines of /etc/passwd
+
+Display the first 10 lines of `/etc/passwd`
 
 Example:
 
+```
 $ ./5-firstlines
 ##
 # User Database
@@ -262,20 +306,29 @@ $ ./5-firstlines
 # Open Directory.
 ##
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 5-firstlines
-  
-6. Line #2
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `5-firstlines`
+
+ Done! Help Check your code
+
+### 6\. Line #2
+
 mandatory
-Write a script that displays the third line of the file iacta.
 
-The file iacta will be in the working directory
+Write a script that displays the third line of the file `iacta`.
 
-You’re not allowed to use sed
-julien@ubuntu:/tmp/h$ cat iacta 
+The file `iacta` will be in the working directory
+
+-   You're not allowed to use `sed`
+
+```
+julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -290,21 +343,29 @@ German (Der Würfel ist gefallen), Hungarian (A kocka el van vetve) and many oth
 indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-julien@ubuntu:/tmp/h$ ./6-third_line 
+julien@ubuntu:/tmp/h$ ./6-third_line
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
-julien@ubuntu:/tmp/h$ 
-Note: The output will differ, depending on the content of the file iacta.
+julien@ubuntu:/tmp/h$
 
-Repo:
+```
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 6-third_line
-  
-7. It is a good file that cuts iron without making a noise
+Note: The output will differ, depending on the content of the file `iacta`.
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `6-third_line`
+
+ Done! Help Check your code
+
+### 7\. It is a good file that cuts iron without making a noise
+
 mandatory
-Write a shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
 
+Write a shell script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line.
+
+```
 julien@ubuntu:~/shell$ ls && ./7-file && ls -l && cat -e \\*
 0-mac_and_cheese 7-file 7-file~ Makefile
 total 20
@@ -315,16 +376,24 @@ total 20
 -rw-rw-r-- 1 julien julien 17 Jan 20 06:40 \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
 Best School$
 julien@ubuntu:~/shell$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 7-file
-  
-8. Save current state of directory
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `7-file`
+
+ Done! Help Check your code
+
+### 8\. Save current state of directory
+
 mandatory
-Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
+Write a script that writes into the file `ls_cwd_content` the result of the command `ls -la`. If the file `ls_cwd_content` already exists, it should be overwritten. If the file `ls_cwd_content` does not exist, create it.
+
+```
 julien@ubuntu:/tmp/h$ ls -la
 total 20
 drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
@@ -332,7 +401,7 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rwxrw-r--  1 julien julien   36 Sep 20 18:18 8-cwd_state
 -rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
 -rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
-julien@ubuntu:/tmp/h$ ./8-cwd_state 
+julien@ubuntu:/tmp/h$ ./8-cwd_state
 julien@ubuntu:/tmp/h$ ls -la
 total 24
 drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
@@ -341,7 +410,7 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
 -rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
 -rw-rw-r--  1 julien julien  329 Sep 20 18:18 ls_cwd_content
-julien@ubuntu:/tmp/h$ cat ls_cwd_content 
+julien@ubuntu:/tmp/h$ cat ls_cwd_content
 total 20
 drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
 drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
@@ -349,19 +418,28 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
 -rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
 -rw-rw-r--  1 julien julien    0 Sep 20 18:18 ls_cwd_content
-julien@ubuntu:/tmp/h$ 
-Repo:
+julien@ubuntu:/tmp/h$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 8-cwd_state
-  
-9. Duplicate last line
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `8-cwd_state`
+
+ Done! Help Check your code
+
+### 9\. Duplicate last line
+
 mandatory
-Write a script that duplicates the last line of the file iacta
 
-The file iacta will be in the working directory
-julien@ubuntu:/tmp/h$ cat iacta 
+Write a script that duplicates the last line of the file `iacta`
+
+-   The file `iacta` will be in the working directory
+
+```
+julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -376,8 +454,8 @@ German (Der Würfel ist gefallen), Hungarian (A kocka el van vetve) and many oth
 indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-julien@ubuntu:/tmp/h$ ./9-duplicate_last_line 
-julien@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ ./9-duplicate_last_line
+julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -393,17 +471,25 @@ indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-julien@ubuntu:/tmp/h$ 
-Repo:
+julien@ubuntu:/tmp/h$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 9-duplicate_last_line
-  
-10. No more javascript
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `9-duplicate_last_line`
+
+ Done! Help Check your code
+
+### 10\. No more javascript
+
 mandatory
-Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
+Write a script that deletes all the regular files (not the directories) with a `.js` extension that are present in the current directory and all its subfolders.
+
+```
 julien@ubuntu:/tmp/h$ ls -lR
 .:
 total 24
@@ -421,7 +507,7 @@ total 0
 
 ./dir.js:
 total 0
-julien@ubuntu:/tmp/h$ ./10-no_more_js 
+julien@ubuntu:/tmp/h$ ./10-no_more_js
 julien@ubuntu:/tmp/h$ ls -lR
 .:
 total 24
@@ -437,19 +523,29 @@ total 0
 
 ./dir.js:
 total 0
-julien@ubuntu:/tmp/h$ 
-Repo:
+julien@ubuntu:/tmp/h$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 10-no_more_js
-  
-11. Don't just count your directories, make your directories count
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `10-no_more_js`
+
+ Done! Help Check your code
+
+### 11\. Don't just count your directories, make your directories count
+
 mandatory
+
 Write a script that counts the number of directories and sub-directories in the current directory.
 
-The current and parent directories should not be taken into account
-Hidden directories should be counted
+-   The current and parent directories should not be taken into account
+
+-   Hidden directories should be counted
+
+```
 julien@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
 .:
 total 32
@@ -489,20 +585,29 @@ drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 ..
 julien@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
 3
 julien@production-503e7013:~/shell/fun_with_the_shell$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 11-directories
-  
-12. What’s new
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `11-directories`
+
+ Done! Help Check your code
+
+### 12\. What's new
+
 mandatory
+
 Create a script that displays the 10 newest files in the current directory.
 
 Requirements:
 
-One file per line
-Sorted from the newest to the oldest
+-   One file per line
+-   Sorted from the newest to the oldest
+
+```
 alex@ubuntu:/tmp$ ls -l
 total 7
 -rwxr-xr-x 1 501 dialout  32 Sep 27 23:51 0-hello_world
@@ -519,7 +624,7 @@ total 7
 -rwxr-xr-x 1 501 dialout  36 Sep 28 00:34 8-cwd_state
 -rwxr-xr-x 1 501 dialout  35 Sep 28 00:35 9-duplicate_last_line
 -rw-r--r-- 1 501 dialout  19 Sep 27 23:51 README.md
-alex@ubuntu:/tmp$ ./12-newest_files 
+alex@ubuntu:/tmp$ ./12-newest_files
 12-newest_files
 11-directories
 10-no_more_js
@@ -531,89 +636,122 @@ alex@ubuntu:/tmp$ ./12-newest_files
 4-lastlines
 3-twofiles
 alex@ubuntu:/tmp$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 12-newest_files
-  
-13. Being unique is better than being perfect
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `12-newest_files`
+
+ Done! Help Check your code
+
+### 13\. Being unique is better than being perfect
+
 mandatory
+
 Create a script that takes a list of words as input and prints only words that appear exactly once.
 
-Input format: One line, one word
-Output format: One line, one word
-Words should be sorted
-julien@ubuntu:/tmp/0x02$ cat list 
-C#
-C
-Javascript
-Perl
-PHP
-PHP
-ASP
-R
-Go
-C#
-C++
-R
-Perl
-Javascript
-Javascript
-Python
-Javascript
-Javascript
-Javascript
-Java
-Java
-Python
-Javascript
-Javascript
-Javascript
-ASP
-julien@ubuntu:/tmp/0x02$ cat list | ./13-unique 
-C
-C++
-Go
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+-   Input format: One line, one word
+-   Output format: One line, one word
+-   Words should be sorted
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 13-unique
-  
-14. It must be in that file
+```
+julien@ubuntu:/tmp/0x02$ cat list
+C#
+C
+Javascript
+Perl
+PHP
+PHP
+ASP
+R
+Go
+C#
+C++
+R
+Perl
+Javascript
+Javascript
+Python
+Javascript
+Javascript
+Javascript
+Java
+Java
+Python
+Javascript
+Javascript
+Javascript
+ASP
+julien@ubuntu:/tmp/0x02$ cat list | ./13-unique
+C
+C++
+Go
+julien@ubuntu:/tmp/0x02$
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `13-unique`
+
+ Done! Help Check your code
+
+### 14\. It must be in that file
+
 mandatory
-Display lines containing the pattern “root” from the file /etc/passwd
 
+Display lines containing the pattern "root" from the file `/etc/passwd`
+
+```
 $ ./14-findthatword
 root:*:0:0:System Administrator:/var/root:/bin/sh
 daemon:*:1:1:System Services:/var/root:/usr/bin/false
 _cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 14-findthatword
-  
-15. Count that word
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `14-findthatword`
+
+ Done! Help Check your code
+
+### 15\. Count that word
+
 mandatory
-Display the number of lines that contain the pattern “bin” in the file /etc/passwd
 
+Display the number of lines that contain the pattern "bin" in the file `/etc/passwd`
+
+```
 $ ./15-countthatword
 81
-$ 
-Repo:
+$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 15-countthatword
-  
-16. What's next?
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `15-countthatword`
+
+ Done! Help Check your code
+
+### 16\. What's next?
+
 mandatory
-Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
 
+Display lines containing the pattern "root" and 3 lines after them in the file `/etc/passwd`.
+
+```
 $ ./16-whatsnext
 root:*:0:0:System Administrator:/var/root:/bin/sh
 daemon:*:1:1:System Services:/var/root:/usr/bin/false
@@ -626,16 +764,24 @@ _usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
 _dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
 _dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 16-whatsnext
-  
-17. I hate bins
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `16-whatsnext`
+
+ Done! Help Check your code
+
+### 17\. I hate bins
+
 mandatory
-Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
 
+Display all the lines in the file `/etc/passwd` that do not contain the pattern "bin".
+
+```
 $ ./17-hidethisword
 ##
 # User Database
@@ -648,17 +794,26 @@ $ ./17-hidethisword
 # Open Directory.
 ##
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 17-hidethisword
-  
-18. Letters only please
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `17-hidethisword`
+
+ Done! Help Check your code
+
+### 18\. Letters only please
+
 mandatory
-Display all lines of the file /etc/ssh/sshd_config starting with a letter.
 
-include capital letters as well
+Display all lines of the file `/etc/ssh/sshd_config` starting with a letter.
+
+-   include capital letters as well
+
+```
 $ ./18-letteronly
 SyslogFacility AUTHPRIV
 AuthorizedKeysFile  .ssh/authorized_keys
@@ -666,56 +821,89 @@ UsePrivilegeSeparation sandbox # Default for new installations.
 AcceptEnv LANG LC_*
 Subsystem   sftp    /usr/libexec/sftp-server
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 18-letteronly
-  
-19. A to Z
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `18-letteronly`
+
+ Done! Help Check your code
+
+### 19\. A to Z
+
 mandatory
-Replace all characters A and c from input to Z and e respectively.
 
-julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ 
+Replace all characters `A` and `c` from input to `Z` and `e` respectively.
+
+```
+julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ
 Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+julien@ubuntu:/tmp/0x02$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 19-AZ
-  
-20. Without C, you would live in hiago
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `19-AZ`
+
+ Done! Help Check your code
+
+### 20\. Without C, you would live in hiago
+
 mandatory
-Create a script that removes all letters c and C from input.
 
-julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago 
+Create a script that removes all letters `c` and `C` from input.
+
+```
+julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago
 hiago
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+julien@ubuntu:/tmp/0x02$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 20-hiago
-  
-21. esreveR
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `20-hiago`
+
+ Done! Help Check your code
+
+### 21\. esreveR
+
 mandatory
+
 Write a script that reverse its input.
 
-julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse 
+```
+julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse
 esreveR
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+julien@ubuntu:/tmp/0x02$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 21-reverse
-  
-22. DJ Cut Killer
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `21-reverse`
+
+ Done! Help Check your code
+
+### 22\. DJ Cut Killer
+
 mandatory
+
 Write a script that displays all users and their home directories, sorted by users.
 
-Based on the the /etc/passwd file
+-   Based on the the `/etc/passwd` file
+
+```
 julien@ubuntu:/tmp/0x02$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -760,7 +948,7 @@ julien:x:1000:1000:Julien Barbier,,,:/home/julien:/bin/bash
 guillaume:x:1001:1001:,,,:/home/guillaume:/bin/bash
 betty:x:1002:1002::/home/betty:
 julien@ubuntu:/tmp/0x02$
-julien@ubuntu:/tmp/0x02$ ./22-users_and_homes 
+julien@ubuntu:/tmp/0x02$ ./22-users_and_homes
 _apt:/nonexistent
 avahi-autoipd:/var/lib/avahi-autoipd
 avahi:/var/run/avahi-daemon
@@ -803,22 +991,33 @@ uucp:/var/spool/uucp
 uuidd:/run/uuidd
 whoopsie:/nonexistent
 www-data:/var/www
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+julien@ubuntu:/tmp/0x02$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 22-users_and_homes
-  
-23. Empty casks make the most noise
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `22-users_and_homes`
+
+ Done! Help Check your code
+
+### 23\. Empty casks make the most noise
+
 #advanced
+
 Write a command that finds all empty files and directories in the current directory and all sub-directories.
 
-Only the names of the files and directories should be displayed (not the entire path)
-Hidden files should be listed
-One file name per line
-The listing should end with a new line
-You are not allowed to use basename, grep, egrep, fgrep or rgrep
+-   Only the names of the files and directories should be displayed (not the entire path)
+
+-   Hidden files should be listed
+-   One file name per line
+
+-   The listing should end with a new line
+-   You are not allowed to use `basename`, `grep`, `egrep`, `fgrep` or `rgrep`
+
+```
 ubuntu@ip-172-31-63-244:~/0x02-shell_redirections$ ls -laR
 .:
 total 64
@@ -892,23 +1091,32 @@ rudy_rigot.gif
 .horrible_selfie.gif
 ........gif
 ubuntu@ip-172-31-63-244:~/0x02-shell_redirections$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 100-empty_casks
-  
-24. A gif is worth ten thousand words
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `100-empty_casks`
+
+ Done! Help Check your code
+
+### 24\. A gif is worth ten thousand words
+
 #advanced
-Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
 
-Hidden files should be listed
-Only regular files (not directories) should be listed
-The names of the files should be displayed without their extensions
-The files should be sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay)
-One file name per line
-The listing should end with a new line
-You are not allowed to use basename, grep, egrep, fgrep or rgrep
+Write a script that lists all the files with a `.gif` extension in the current directory and all its sub-directories.
+
+-   Hidden files should be listed
+-   Only regular files (not directories) should be listed
+-   The names of the files should be displayed without their extensions
+-   The files should be sorted by byte values, but case-insensitive (file `aaa` should be listed before file `bbb`, file `.b` should be listed before file `a`, and file `Rona` should be listed after file `jay`)
+-   One file name per line
+-   The listing should end with a new line
+-   You are not allowed to use `basename`, `grep`, `egrep`, `fgrep` or `rgrep`
+
+```
     julien@production-503e7013:~/shell/fun_with_the_shell$ ls -Rla
     .:
     total 28
@@ -951,47 +1159,65 @@ You are not allowed to use basename, grep, egrep, fgrep or rgrep
     Electra_napping
     main
     julien@production-503e7013:~/shell/fun_with_the_shell$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 101-gifs
-  
-25. Acrostic
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `101-gifs`
+
+ Done! Help Check your code
+
+### 25\. Acrostic
+
 #advanced
-An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. Read more.
+
+An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. [Read more](https://alx-intranet.hbtn.io/rltoken/I2jXYKQIpVouDo0_1XrCJw "Read more").
 
 Create a script that decodes acrostics that use the first letter of each line.
 
-The ‘decoded’ message has to end with a new line
-You are not allowed to use grep, egrep, fgrep or rgrep
-julien@ubuntu:/tmp/0x02$ cat An\ Acrostic 
+-   The 'decoded' message has to end with a new line
+-   You are not allowed to use `grep`, `egrep`, `fgrep` or `rgrep`
+
+```
+julien@ubuntu:/tmp/0x02$ cat An\ Acrostic
 Elizabeth it is in vain you say
-Love not"—thou sayest it in so sweet a way:
+Love not"---thou sayest it in so sweet a way:
 In vain those words from thee or L.E.L.
 Zantippe's talents had enforced so well:
 Ah! if that language from thy heart arise,
-Breath it less gently forth—and veil thine eyes.
+Breath it less gently forth---and veil thine eyes.
 Endymion, recollect, when Luna tried
-To cure his love—was cured of all beside—
-His follie—pride—and passion—for he died.
-julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic 
+To cure his love---was cured of all beside---
+His follie---pride---and passion---for he died.
+julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic
 ELIZABETH
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+julien@ubuntu:/tmp/0x02$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 102-acrostic
-  
-26. The biggest fan
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `102-acrostic`
+
+ Done! Help Check your code
+
+### 26\. The biggest fan
+
 #advanced
+
 Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 
-Order by number of requests, most active host or IP at the top
-You are not allowed to use grep, egrep, fgrep or rgrep
+-   Order by number of requests, most active host or IP at the top
+-   You are not allowed to use `grep`, `egrep`, `fgrep` or `rgrep`
+
 Format:
 
+```
 host    When possible, the hostname making the request. Uses the IP address if the hostname was unavailable.
 logname Unused, always -
 time    In seconds, since 1970
@@ -999,8 +1225,12 @@ method  HTTP method: GET, HEAD, or POST
 url Requested path
 response    HTTP response code
 bytes   Number of bytes in the reply
+
+```
+
 Here is an example with one day of logs of the NASA website (1995).
 
+```
 julien@ubuntu:/tmp/0x02$ wget http://indeedeng.github.io/imhotep/files/nasa_19950801.tsv
 --2016-09-21 10:05:09--  http://indeedeng.github.io/imhotep/files/nasa_19950801.tsv
 Resolving indeedeng.github.io (indeedeng.github.io)... 151.101.52.133
@@ -1012,24 +1242,24 @@ Resolving opensource.indeedeng.io (opensource.indeedeng.io)... 151.101.52.133
 Reusing existing connection to indeedeng.github.io:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 2339220 (2.2M) [text/tab-separated-values]
-Saving to: ‘nasa_19950801.tsv’
+Saving to: 'nasa_19950801.tsv'
 
-nasa_19950801.tsv               100%[==========================================================>]   2.23M  1.02MB/s    in 2.2s    
+nasa_19950801.tsv               100%[==========================================================>]   2.23M  1.02MB/s    in 2.2s
 
-2016-09-21 10:05:11 (1.02 MB/s) - ‘nasa_19950801.tsv’ saved [2339220/2339220]
+2016-09-21 10:05:11 (1.02 MB/s) - 'nasa_19950801.tsv' saved [2339220/2339220]
 
 julien@ubuntu:/tmp/0x02$ head nasa_19950801.tsv
 host    logname time    method  url response    bytes   referer useragent
-pppa006.compuserve.com  -   807256800   GET /images/launch-logo.gif 200 1713        
-vcc7.langara.bc.ca  -   807256804   GET /shuttle/missions/missions.html 200 8677        
-pppa006.compuserve.com  -   807256806   GET /history/apollo/images/apollo-logo1.gif 200 1173        
+pppa006.compuserve.com  -   807256800   GET /images/launch-logo.gif 200 1713
+vcc7.langara.bc.ca  -   807256804   GET /shuttle/missions/missions.html 200 8677
+pppa006.compuserve.com  -   807256806   GET /history/apollo/images/apollo-logo1.gif 200 1173
 thing1.cchem.berkeley.edu   -   807256870   GET /shuttle/missions/sts-70/sts-70-day-03-highlights.html  200 4705
-202.236.34.35   -   807256881   GET /whats-new.html 200 18936       
-bettong.client.uq.oz.au -   807256884   GET /history/skylab/skylab.html 200 1687        
-202.236.34.35   -   807256884   GET /images/whatsnew.gif    200 651     
-202.236.34.35   -   807256885   GET /images/KSC-logosmall.gif   200 1204        
-bettong.client.uq.oz.au -   807256900   GET /history/skylab/skylab.html 304 0   
-julien@ubuntu:/tmp/0x02$ ./103-the_biggest_fan < nasa_19950801.tsv 
+202.236.34.35   -   807256881   GET /whats-new.html 200 18936
+bettong.client.uq.oz.au -   807256884   GET /history/skylab/skylab.html 200 1687
+202.236.34.35   -   807256884   GET /images/whatsnew.gif    200 651
+202.236.34.35   -   807256885   GET /images/KSC-logosmall.gif   200 1204
+bettong.client.uq.oz.au -   807256900   GET /history/skylab/skylab.html 304 0
+julien@ubuntu:/tmp/0x02$ ./103-the_biggest_fan < nasa_19950801.tsv
 edams.ksc.nasa.gov
 130.110.74.81
 www-relay.pa-x.dec.com
@@ -1041,10 +1271,14 @@ poppy.hensa.ac.uk
 gw1.att.com
 arc.dental.upenn.edu
 131.110.62.74
-julien@ubuntu:/tmp/0x02$ 
-Repo:
+julien@ubuntu:/tmp/0x02$
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x02-shell_redirections
-File: 103-the_biggest_fan
-  
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x02-shell_redirections`
+-   File: `103-the_biggest_fan`
+
+ Done! Help
