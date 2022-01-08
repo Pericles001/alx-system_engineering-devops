@@ -1,0 +1,3 @@
+[submodule "command_line_for_the_win"]
+	path = command_line_for_the_win
+	url = https://github.com/Pericles001/command_line_for_the_win.git
