@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script prints "Holberton school" 10 times, and "hi" on the 9th iteration
+# This script is used for FizzBuzz game
 n=1
 
 while [ $n -le 100 ]
