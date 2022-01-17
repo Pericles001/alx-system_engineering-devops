@@ -1,21 +1,17 @@
 #!/usr/bin/env bash
-# Loops from 1 to 10 and displays:
-#   "bad luck" for the 4th iteration
-#   "good luck" for the 8th iteration
-#   "Best School" for all other iterations
+# This script prints "bad luck" 4th iteration, "good luck" on the 8th iteration, and "Holberton School" for other iterations
+n=1
 
-count=0
-
-while [ $count -lt 10 ]
+while [ $n -le 10 ]
 do
-  if [ $count -eq 3 ]
-  then
-    echo "bad luck"
-  elif [ $count -eq 7 ]
-  then
-    echo "good luck"
-  else
-    echo "Best School"
-  fi
-  (( count++ ))
+    if [ $n -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ $n -eq 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Holberton School"
+    fi
+    n=$(( n + 1 ))
 done
