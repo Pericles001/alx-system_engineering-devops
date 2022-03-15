@@ -5,9 +5,18 @@
 #When querying Nginx at its root / with a GET request (requesting a page) using curl, it must return a page that contains the string Hello World!
 #As an answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements (this script will be run on the server itself)
 #You can’t use systemctl for restarting nginx
-STRING="Hello World!"
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo "$STRING" > /var/www/html/index.nginx-debian.html
+apt-get update
+apt-get install -y nginx
+
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Hello World" > /etc/nginx/html/index.html
+printf %s "server {
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /etc/nginx/html;
+     index       index.html index.htm;
+}
+" > /etc/nginx/sites-available/default
+
 service nginx restart
