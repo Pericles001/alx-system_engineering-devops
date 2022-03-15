@@ -12,12 +12,11 @@ mkdir /etc/nginx/html
 touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index/html
 print %s "server {
-	listen  80 default_server;
-	listen  [::]:80 default_server;
-	root   /etc/nginx/html;
-	index  index.html index.html;
+	listen		80 default_server;
+	listen		[::]:80 default_server;
+	root		/etc/nginx/html;
+	index		index.html index.html;
 }
 " > /etc/nginx/sites-available/default
 
 service nginx restart
-
