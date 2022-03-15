@@ -6,12 +6,12 @@ sudo apt-get install -y nginx
 
 mkdir /etc/nginx/html
 touch /etc/nginx/html/index.html
-echo "Hello World!" > /etc/nginx/html/index/html
+echo "Hello World!" > /etc/nginx/html/index.html
 print %s "server {
 	listen		80 default_server;
 	listen		[::]:80 default_server;
 	root		/etc/nginx/html;
-	index		index.html index.html;
+	index		index.html index.htm;
 
 	location	/redirect_me {
 		return 301 http://cuberule.com/;
