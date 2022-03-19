@@ -1,32 +1,22 @@
 #!/usr/bin/env bash
 #Configure your Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page.
 
-sudo apt-get update
-sudo apt-get install -y nginx
+STRING="Hello World"
 
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
-echo "Hello World!" > /etc/nginx/html/index.html
-touch /etc/nginx/html/404.html
-echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
-print %s "server {
-	listen		80 default_server;
-	listen		[::]:80 default_server;
-	root		/etc/nginx/html;
-	index		index.html index.htm;
+REDIRECT="\n\tlocation /redirect_me {\n\t\treturn 301 https://youtu.be/dQw4w9WgXcQ;\n\t}\n"
+FILE="/etc/nginx/sites-available/default"
 
-	location	/redirect_me {
-		return 301 http://cuberule.com/;
-	}
+ERRORFILE="/usr/share/nginx/html/404error.html"
+FOUR="Ceci n'est pas une page"
+ERRORREDIRECT="\n\terror_page 404 /404error.html;\n\tlocation = /404error.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n\t}\n"
 
-	error_page 404 /404.html;
-	location /404 {
-		root /etc/nginx/html;
-		internal;
-	}
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+sudo echo "$STRING" > /var/www/html/index.nginx-debian.html
+sed -i "37i\ $REDIRECT" "$FILE"
 
-}
-" > /etc/nginx/sites-available/default
+echo "$FOUR" > "$ERRORFILE"
+sed -i "37i\ $ERRORREDIRECT" "$FILE"
 
 service nginx restart
-
