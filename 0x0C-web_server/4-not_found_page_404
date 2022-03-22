@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Configure your Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page.
 
-STRING="Hello World"
+STRING="Hello World!"
 
 REDIRECT="\n\tlocation /redirect_me {\n\t\treturn 301 https://youtu.be/dQw4w9WgXcQ;\n\t}\n"
 FILE="/etc/nginx/sites-available/default"
