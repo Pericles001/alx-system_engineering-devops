@@ -3,8 +3,6 @@
 
 -   By Sylvain Kalache, co-founder at Holberton School
 -   Weight: 1
--   Project over - took place from 03-21-2022 to 03-22-2022 - you're done with 0% of tasks.
--   An auto review will be launched at the deadline
 
 
 Concepts
