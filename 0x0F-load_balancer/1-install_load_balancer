@@ -1,18 +1,24 @@
 #!/usr/bin/env bash
 # Installs and configures HAproxy-2.0
-sudo apt-get install -y --no-install-recommends software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.0
-sudo apt -y install haproxy
+#!/usr/bin/env bash
+# Installs HAProxy version 1.8 with the following configurations:
+#+    Enables management via the init script.
+#+    Distributes requests using a round-robin algorithm.
 
-FILE="/etc/haproxy/haproxy.cfg"
+apt-get update
+apt-get install -y haproxy
 
-server_1="3.235.21.36"
-server_2=" 3.83.35.54 "
+printf %s "
+frontend hbnb-lb_front
+        bind *:80
+        mode http
+        default_backend hbnb-lb_back
+backend hbnb-lb_back
+        balance roundrobin
+        server 1723-web-01 100.26.181.86:80 check
+        server 1723-web-02 34.238.192.13:80 check
+" >> /etc/haproxy/haproxy.cfg
 
-FRONTEND="\nfrontend LBfrontend\n\tbind *:80\n\tdefault_backend servers\n"
-BACKEND="\nbackend servers\n\tbalance roundrobin\n\tserver server_1 $server_1\n\tserver server_2 $server_2\n"
+echo "ENABLED=1" >> /etc/default/haproxy
 
-echo -e "$FRONTEND" | sudo tee -a "$FILE" 
-echo -e "$BACKEND" | sudo tee -a "$FILE"
-
-sudo service haproxy restart
+service haproxy start
