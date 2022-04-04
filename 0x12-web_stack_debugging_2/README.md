@@ -34,7 +34,7 @@ Tasks
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/eaeff07a715ff880b1ceb8e863a1d141a74a7f85.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220404%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220404T163615Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e21f8f11059f401ce3d60782dc4d7c3ee86cd1207ef4e8d4496d9aae4944949a)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/eaeff07a715ff880b1ceb8e863a1d141a74a7f85.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220404%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220404T165934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6f669fbc7412b8d10cd9a7dacc706d543b95a18fb8b7b0ce73c2638cc64daf5b)
 
 The user `root` is, on Linux, the "superuser". It can do anything it wants, that's a good and bad thing. A good practice is that one should never be logged in the `root` user, as if you fat finger a command and for example run `rm -rf /`, there is no comeback. That's why it is preferable to run as a privileged user, meaning that the user also has the ability to perform tasks that the `root` user can do, just need to use a specific command that you need to discover.
 
@@ -65,7 +65,7 @@ root@ubuntu:~#
 -   Directory: `0x12-web_stack_debugging_2`
 -   File: `0-iamsomeoneelse`
 
- Done? Help Get a sandbox
+ Done! Help Get a sandbox
 
 ### 1\. Run Nginx as Nginx
 
@@ -103,3 +103,27 @@ root@ab6f4542747e:~#
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x12-web_stack_debugging_2`
 -   File: `1-run_nginx_as_nginx`
+
+ Done! Help Get a sandbox
+
+### 2\. 7 lines or less
+
+#advanced
+
+Using what you did for task #1, make your fix short and sweet.
+
+Requirements:
+
+-   Your Bash script must be 7 lines long or less
+-   There must be a new line at the end of the file
+-   You respect Bash script requirements
+-   You cannot use `;`
+-   You cannot use `&&`
+-   You cannot use `wget`
+-   You cannot execute your previous answer file (Do not include the name of the previous script in this one)
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x12-web_stack_debugging_2`
+-   File: `100-fix_in_7_lines_or_less`
