@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #install mysql
-apt update
+sudo apt update
 sudo apt install -f -y mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
