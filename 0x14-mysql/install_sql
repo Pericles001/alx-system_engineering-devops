@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#install mysql
+apt update
+apt-get install -y mysql-server
