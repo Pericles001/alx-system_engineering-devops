@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
-#install mysql
-<<<<<<< HEAD
+#install mysql 5.7.19
 apt update
 sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.3-1_all.deb
 dpkg -i mysql-apt-config_0.8.3-1_all.deb
 sudo apt-get update
-sudo apt-get install mysql-server
+sudo apt-get install mariadb-server-10.3
 sudo mysql --version
-=======
-sudo apt update
-sudo apt install -f -y mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
->>>>>>> 8a48f973c21cc86f71c9a119a77e3d43c025e6f1
