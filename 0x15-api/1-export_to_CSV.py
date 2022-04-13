@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """fetches information from JSONplaceholder API and exports to CSV"""
 
 from csv import DictWriter, QUOTE_ALL
