@@ -1,4 +1,3 @@
-
 # !/usr/bin/python3
 """fetches information from JSONplaceholder API and exports to CSV"""
 
