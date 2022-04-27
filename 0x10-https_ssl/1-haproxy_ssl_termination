@@ -38,7 +38,7 @@ frontend www-http
     http-request set-header X-Forwarded-Proto http
     default_backend www-backend
 frontend www-https
-    bind   0.0.0.0:443 ssl crt /etc/haproxy/certs/thepadj.tech.pem
+    bind   0.0.0.0:443 ssl crt /etc/haproxy/certs/www.thepadj.tech.pem
     http-request set-header X-Forwarded-Proto https
     acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
     use_backend letsencrypt-backend if letsencrypt-acl
