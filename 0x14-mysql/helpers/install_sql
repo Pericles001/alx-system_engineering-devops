@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#install mysql 5.7.19
+apt update
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.3-1_all.deb
+dpkg -i mysql-apt-config_0.8.3-1_all.deb
+sudo apt-get update
+sudo apt-get install mariadb-server-10.3
+sudo mysql --version
